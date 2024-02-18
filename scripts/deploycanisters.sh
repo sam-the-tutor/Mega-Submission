@@ -170,7 +170,7 @@ dfx canister --network local call Chat_ledger icrc1_transfer '
     to=(record {
       owner=(principal "ewbs4-24msb-e266v-n77o7-trfif-w6mqf-pfqyt-y4k7v-n4vyj-czljs-7qe")
     });
-    amount=50_000_000
+    amount=90_000_000
   })
 '
 

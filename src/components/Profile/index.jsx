@@ -34,7 +34,7 @@ const Profile = () => {
       {/* principal ID, email and firebase */}
       <div className="flex w-full justify-evenly py-1 border rounded-sm">
         <div>
-          <div className="flex flex-col rounded-lg p-4 justify-center">
+          <div className="flex flex-col rounded-lg p-2 justify-center">
             <h2 className="uppercase">Principal ID</h2>
             <div className="flex gap-2 justify-center items-center">
               <span>{shortenString(principalID)}</span>
@@ -44,7 +44,7 @@ const Profile = () => {
               />
             </div>
           </div>
-          <div className="flex flex-col items-center rounded-lg justify-center">
+          <div className="flex flex-col items-center rounded-lg justify-center mb-2">
             <h2 className="uppercase ">Email Address</h2>
             <div className="flex gap-2 justify-center items-center">
               <span>{userInfo && userInfo?.emailAddress}</span>
@@ -72,7 +72,7 @@ const Profile = () => {
           </button>
         </div>
 
-        <div className="flex flex-col">
+        <div className="flex flex-col justify-center ">
           <AddNewModal />
           <SaveEmailModal />
         </div>

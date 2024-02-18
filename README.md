@@ -1,52 +1,91 @@
-# Vite + React + Motoko
+# ICP Portfolio
 
-### Get started directly in your browser:
+A portfolio manager dapp built on the internet computer blockchain
 
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/rvanasa/vite-react-motoko)
+![](./src/assets/Screenshot%20from%202024-02-18%2015-53-22.png)
 
-This template gives you everything you need to build a full-stack Web3 application on the [Internet Computer](https://internetcomputer.org/).
+## Background:
 
-For an example of a real-world dapp built using this starter project, check out the [source code](https://github.com/dfinity/feedback) for DFINITY's [Developer Experience Feedback Board](https://dx.internetcomputer.org/).
+Assets( tokens and nfts ) on the Internet computer are held by Principal ids. There are various ways on how you can get and manage a principal id. one of which is the Internet Identity. However, with the current configurations of the Internet Idntity, a new principal id is generated very time you log into a new application even when using the same anchor. As the number of the applications being logged into increases, it becomes a little bit difficult to track all the different identities for each of the applications later on th assets in those principal ids.
 
-## 📦 Create a New Project
+With our application, we provide an easier way to track and manage the different principal ids from differeent applications as well as the assets from all the principal ids.
 
-Make sure that [Node.js](https://nodejs.org/en/) `>= 16` and [`dfx`](https://internetcomputer.org/docs/current/developer-docs/build/install-upgrade-remove) `>= 0.14` are installed on your system.
+When you log into a new application, all you have to do is to register the new principal id with our application, and we will track all the assets that are held by that principal id. With this, you can keep track of which assets are held by which id.
 
-Run the following commands in a new, empty project directory:
+We also provide a way to get notified whenever there is an activity such as token transfer on any of your principal id(account).
+With this application, we hope to revolutionalize how accounts and assets are managed on the internet computer.
 
-```sh
-npx degit rvanasa/vite-react-motoko # Download this starter project
-dfx start --clean --background # Run dfx in the background
-npm run setup # Install packages, deploy canisters, and generate type bindings
+### How the application works.
 
-npm start # Start the development server
+- User logins in using their internet identity credentials.
+
+![](./src/assets/Screenshot%20from%202024-02-18%2016-16-16.png)
+
+- User is dircted to the dashboard where all the tokens held by their principal id and their relevant information can be seen
+
+![](./src/assets/Screenshot%20from%202024-02-18%2016-05-08.png)
+
+- Click on any of the tokens to see more information about the token and the how much each of your individual id holds in that token
+
+![](./src/assets/Screenshot%20from%202024-02-18%2016-18-52.png)
+
+- To add a new principal id, navigate to the settings page.
+
+![](./src/assets/Screenshot%20from%202024-02-18%2015-54-32.png)
+
+- You can also set up email notifications for your principal Id for any token of your choice.
+  You will receive an email wherenever there is an activity on your registered account(principal ids)
+  ![](./src/assets/Screenshot%20from%202024-02-18%2015-55-14.png)
+
+- Click on the `Send` button on the left sidebar to send tokens held by your principal id
+
+![](./src/assets/Screenshot%20from%202024-02-18%2016-04-55.png)
+
+- To recieve tokens, click on the `Receive` button on the sidebar to scan the qr code or copy the relevant address
+
+![](./src/assets/Screenshot%20from%202024-02-18%2016-04-42.png)
+
+### Upcoming features.
+
+- We are already developing a no-code launch pad for both ICP and the bitfinity network.Users will be able to create and launch their tokens and nfts on the two networks w
+  ![](./src/assets/Screenshot%20from%202024-02-18%2016-05-19.png)
+
+- Staiking, Automated swapping, and trading bots features
+
+![](./src/assets/Screenshot%20from%202024-02-18%2016-18-52.png)
+
+- Adding support for NFTS, users should be able to see all the nfts held by their different accounts.
+
+- An inscriptions explorer,where users can see the inscriptions held by their principal ids(example is bioniq)
+
+### How to run the project locally
+
+- Clone the github repo
+
+```
+git clone https://github.com/sam-the-tutor/ICP-Portfolio
 ```
 
-When ready, run `dfx deploy --network ic` to deploy your application to the Internet Computer.
+- Install the dependecies
 
-## 🛠️ Technology Stack
+```
+npm install
+```
 
-- [Vite](https://vitejs.dev/): high-performance tooling for front-end web development
-- [React](https://reactjs.org/): a component-based UI library
-- [TypeScript](https://www.typescriptlang.org/): JavaScript extended with syntax for types
-- [Sass](https://sass-lang.com/): an extended syntax for CSS stylesheets
-- [Prettier](https://prettier.io/): code formatting for a wide range of supported languages
-- [Motoko](https://github.com/dfinity/motoko#readme): a safe and simple programming language for the Internet Computer
-- [Mops](https://mops.one): an on-chain community package manager for Motoko
-- [mo-dev](https://github.com/dfinity/motoko-dev-server#readme): a live reload development server for Motoko
+- run the deploycanisters.sh file inside the scripts folder to deploy the canisters
 
-## 📚 Documentation
+```
+./scripts/deploycanisters.sh
+```
 
-- [Vite developer docs](https://vitejs.dev/guide/)
-- [React quick start guide](https://react.dev/learn)
-- [Internet Computer docs](https://internetcomputer.org/docs/current/developer-docs/ic-overview)
-- [`dfx.json` reference schema](https://internetcomputer.org/docs/current/references/dfx-json-reference/)
-- [Motoko developer docs](https://internetcomputer.org/docs/current/developer-docs/build/cdks/motoko-dfinity/motoko/)
-- [Mops usage instructions](https://j4mwm-bqaaa-aaaam-qajbq-cai.ic0.app/#/docs/install)
+- start the server
 
-## 💡 Tips and Tricks
+```
+npm start
+```
 
-- Customize your project's code style by editing the `.prettierrc` file and then running `npm run format`.
-- Reduce the latency of update calls by passing the `--emulator` flag to `dfx start`.
-- Install a Motoko package by running `npx ic-mops add <package-name>`. Here is a [list of available packages](https://mops.one/).
-- Split your frontend and backend console output by running `npm run frontend` and `npm run backend` in separate terminals.
+Project should be accessible on the localhost:3000
+
+### Licence
+
+MIT

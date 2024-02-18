@@ -9,6 +9,9 @@ import Send from './components/Send';
 import Profile from './components/Profile';
 import TokenInfo from './components/TokenInfo';
 import Launch from './components/Launch/Launch';
+import Inscriptions from './components/Inscriptions';
+
+import Nfts from './components/NFTS';
 function App() {
   return (
     <>
@@ -19,13 +22,13 @@ function App() {
             <Route index element={<Dashboard />} />
             <Route path="recieve" element={<Recieve />} />
             <Route path="send" element={<Send />} />
-            {/* <Route path="buy" element={<Buy />} /> */}
             <Route path="profile" element={<Profile />} />
             <Route path=":token" element={<TokenInfo />} />
             <Route path="launch" element={<Launch />} />
-            {/* <Route path="nfts" element={<NftPage />} /> */}
-            {/* <Route path="launch/token" element={<NewToken />} /> */}
-            {/* <Route path="launch/nft" element={<NewNfts />} /> */}
+
+            <Route path="nfts" element={<Nfts />} />
+
+            <Route path="inscriptions" element={<Inscriptions />} />
           </Route>
         </Route>
       </Routes>
