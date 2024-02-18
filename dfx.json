@@ -2,12 +2,83 @@
   "canisters": {
     "backend": {
       "type": "motoko",
-      "main": "backend/Backend.mo"
+      "main": "backend/main.mo"
     },
     "frontend": {
       "dependencies": ["backend"],
       "type": "assets",
       "source": ["dist/"]
+    },
+    "internet_identity": {
+      "type": "custom",
+      "candid": "https://github.com/dfinity/internet-identity/releases/download/release-2024-02-02/internet_identity.did",
+      "wasm": "https://github.com/dfinity/internet-identity/releases/download/release-2024-02-02/internet_identity_dev.wasm.gz",
+      "remote": {
+        "id": {
+          "ic": "rdmx6-jaaaa-aaaaa-aaadq-cai"
+        }
+      },
+      "frontend": {}
+    },  "CkBtc_ledger": {
+      "type": "custom",
+      "candid": "https://raw.githubusercontent.com/dfinity/ic/95787355499f3be929f2ab302ed44cdad7c64061/rs/rosetta-api/icrc1/ledger/ledger.did",
+      "wasm": "https://download.dfinity.systems/ic/95787355499f3be929f2ab302ed44cdad7c64061/canisters/ic-icrc1-ledger.wasm.gz",
+      "remote": {
+        "id": {
+          "ic": "mxzaz-hqaaa-aaaar-qaada-cai"
+        }
+      }
+    },
+    "CkBtc_index": {
+      "type": "custom",
+      "candid": "https://raw.githubusercontent.com/dfinity/ic/95787355499f3be929f2ab302ed44cdad7c64061/rs/rosetta-api/icrc1/index/index.did",
+      "wasm": "https://download.dfinity.systems/ic/95787355499f3be929f2ab302ed44cdad7c64061/canisters/ic-icrc1-index.wasm.gz",
+      "remote": {
+        "id": {
+          "ic": "n5wcd-faaaa-aaaar-qaaea-cai"
+        }
+      }
+    },
+    "ICP_ledger": {
+      "type": "custom",
+      "candid": "https://raw.githubusercontent.com/dfinity/ic/8dcee530b947823cb6809e89847e483c0c210d05/rs/rosetta-api/icp_ledger/ledger.did",
+      "wasm": "https://download.dfinity.systems/ic/8dcee530b947823cb6809e89847e483c0c210d05/canisters/ledger-canister.wasm.gz",
+      "remote": {
+        "id": {
+          "ic": "ryjl3-tyaaa-aaaaa-aaaba-cai"
+        }
+      }
+    },
+
+    "ICP_index": {
+      "type": "custom",
+      "candid": "https://raw.githubusercontent.com/dfinity/ic/8dcee530b947823cb6809e89847e483c0c210d05/rs/rosetta-api/icp_ledger/index/index.did",
+      "wasm": "https://download.dfinity.systems/ic/8dcee530b947823cb6809e89847e483c0c210d05/canisters/ic-icp-index-canister.wasm.gz",
+      "remote": {
+        "id": {
+          "ic": "qhbym-qaaaa-aaaaa-aaafq-cai"
+        }
+      }
+    },
+    "Chat_ledger": {
+      "type": "custom",
+      "candid": "https://raw.githubusercontent.com/dfinity/ic/95787355499f3be929f2ab302ed44cdad7c64061/rs/rosetta-api/icrc1/ledger/ledger.did",
+      "wasm": "https://download.dfinity.systems/ic/95787355499f3be929f2ab302ed44cdad7c64061/canisters/ic-icrc1-ledger.wasm.gz",
+      "remote": {
+        "id": {
+          "ic": "2ouva-viaaa-aaaaq-aaamq-cai"
+        }
+      }
+    },
+    "Chat_index": {
+      "type": "custom",
+      "candid": "https://raw.githubusercontent.com/dfinity/ic/95787355499f3be929f2ab302ed44cdad7c64061/rs/rosetta-api/icrc1/index/index.did",
+      "wasm": "https://download.dfinity.systems/ic/95787355499f3be929f2ab302ed44cdad7c64061/canisters/ic-icrc1-index.wasm.gz",
+      "remote": {
+        "id": {
+          "ic": "2awyi-oyaaa-aaaaq-aaanq-cai"
+        }
+      }
     }
   },
   "defaults": {

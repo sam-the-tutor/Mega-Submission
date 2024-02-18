@@ -1,0 +1,26 @@
+{
+  "CkBtc_ledger": {
+    "ic": "zaded-wyaaa-aaaag-abzta-cai"
+  },
+  "CkBtc_minter": {
+    "ic": "zjap7-aqaaa-aaaag-abzsq-cai"
+  },
+  "Hot_ledger": {
+    "ic": "ykmgz-uiaaa-aaaag-abzua-cai"
+  },
+  "ICP_ledger": {
+    "ic": "zobjl-niaaa-aaaag-abzsa-cai"
+  },
+  "backend": {
+    "ic": "22e43-eiaaa-aaaag-ab6hq-cai"
+  },
+  "frontend": {
+    "ic": "yeolr-pyaaa-aaaag-abzva-cai"
+  },
+  "monitorCanister": {
+    "ic": "2iclc-iyaaa-aaaag-ab6eq-cai"
+  },
+  "userCanister": {
+    "ic": "22e43-eiaaa-aaaag-ab6hq-cai"
+  }
+}
