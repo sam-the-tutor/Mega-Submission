@@ -6,14 +6,8 @@ A portfolio manager dapp built on the internet computer blockchain
 
 ## Background:
 
-Assets( tokens and nfts ) on the Internet computer are held by Principal ids. There are various ways on how you can get and manage a principal id. one of which is the Internet Identity. However, with the current configurations of the Internet Idntity, a new principal id is generated very time you log into a new application even when using the same anchor. As the number of the applications being logged into increases, it becomes a little bit difficult to track all the different identities for each of the applications later on th assets in those principal ids.
-
-With our application, we provide an easier way to track and manage the different principal ids from differeent applications as well as the assets from all the principal ids.
-
-When you log into a new application, all you have to do is to register the new principal id with our application, and we will track all the assets that are held by that principal id. With this, you can keep track of which assets are held by which id.
-
-We also provide a way to get notified whenever there is an activity such as token transfer on any of your principal id(account).
-With this application, we hope to revolutionalize how accounts and assets are managed on the internet computer.
+Tracking and managing crpypto assets on the ICP networks have been not a walk over.From managing different principal IDs generated whevenever you login to an application, to tracking all all the assets in those accounts. Most of the tools that offer managing accounts at the moment allow you to track indivivuals accounts at one at a time,which is not the best solution given the number of applications are increasing the number of applications in the ecosystem is increasing at a high pace. 
+We propose, a new solution ICP Portifolio Dapp, an application that will solve most of the challenges that users have been facing when it comes to crypto management.
 
 ### How the application works.
 
