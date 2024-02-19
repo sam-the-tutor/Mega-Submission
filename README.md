@@ -23,7 +23,7 @@ We propose, a new solution ICP Portifolio Dapp, an application that will solve m
 
 ![](./src/assets/Screenshot%20from%202024-02-18%2016-18-52.png)
 
-- To add a new principal id, navigate to the settings page.
+- To add a new principal id, navigate to the settings page. When you add another principal Id, the application automatically fetches all the tokens held by that id, catculates their value using real market prices and re-calculates your portifolio data and statistics
 
 ![](./src/assets/Screenshot%20from%202024-02-18%2015-54-32.png)
 
