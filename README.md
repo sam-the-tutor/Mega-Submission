@@ -57,7 +57,7 @@ We propose, a new solution ICP Portifolio Dapp, an application that will solve m
 - Clone the github repo
 
 ```
-git clone https://github.com/sam-the-tutor/ICP-Portfolio
+git clone https://github.com/sam-the-tutor/Mega-Submission
 ```
 
 - Install the dependecies
